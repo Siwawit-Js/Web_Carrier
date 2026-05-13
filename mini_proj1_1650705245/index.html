@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Mantoon</div>
+        <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#certify">Certify</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <h1 id="hero">Job Openings</h1>
+    <div class="jobcontainer">
+        <div class="joblist">
+            <h2>Frontend Developer</h2>
+            <p>Property: HTML/CSS/JavaScript</p>
+            <p>Qualifications:</p>
+            <p>- Proficient in HTML, CSS, and JavaScript</p>
+            <p>- Experience with React or other modern frontend frameworks</p>
+            <p>- Understanding of responsive design and cross-browser compatibility</p>
+            <p>Salary: 30,000 - 45,000 Baht/Month</p>
+        </div>
+
+        <div class="joblist">
+            <h2>Backend Developer</h2>
+            <p>Property: Node.js/Python/MySQL</p>
+            <p>Qualifications:</p>
+            <p>- Proficient in Node.js, Python, Java, or other backend languages</p>
+            <p>- Experience with database design and management (e.g., MySQL, PostgreSQL, MongoDB)</p>
+            <p>- Understanding of server, network, and hosting environments</p>
+            <p>Salary: 35,000 - 60,000 Baht/Month</p>
+        </div>
+
+        <div class="joblist">
+            <h2>UI/UX Designer</h2>
+            <p>Property: Figma/Adobe XD/Sketch</p>
+            <p>Qualifications:</p>
+            <p>- Proficient in design tools such as Figma, Adobe XD, and Sketch</p>
+            <p>- Strong understanding of user experience (UX) principles and user interface (UI) design</p>
+            <p>- Knowledge of responsive design and accessibility standards</p>
+            <p>Salary: 30,000 - 50,000 Baht/Month</p>
+        </div>
+    </div>
+
+    <h1>Register</h1>
+    <div class="re_container">
+        <form name="registration" onsubmit="return formValidation();">
+
+            <div class="form-group">
+                <label for="posreq">Position Required</label>
+                <input type="text" id="posreq" name="position" placeholder="Enter Position Required" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Enter First Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Enter Last Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tel">Tel</label>
+                <input type="text" id="tel" name="tel" placeholder="Enter Phone Number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Enter Address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="education">Education Level</label>
+                <select id="education" name="education">
+                    <option value="">-- Select --</option>
+                    <option value="vocational">Vocational Certificate</option>
+                    <option value="associate">Associate Degree</option>
+                    <option value="bachelor">Bachelor's Degree</option>
+                    <option value="master">Master's Degree</option>
+                    <option value="phd">Doctorate (PhD)</option>
+                </select>
+            </div>
+            
+            <input type="submit" value="Submit" class="submit-btn">
+        </form>
+    </div>
+
+    <h1 id="certify">Certify & Training</h1>
+    <div class="certify-container">
+        <!-- รายการที่ 1 -->
+        <div class="certify-card">
+            <div class="banner" style="background-image: url('img/frontend01.jpg');"></div>
+            <h2>Frontend Developer</h2>
+            <p>Study HTML, CSS, JavaScript, and React in preparation for applying for a Frontend Developer position.</p>
+        </div>
+
+        <!-- รายการที่ 2 -->
+        <div class="certify-card">
+            <div class="banner" style="background-image: url('img/backend02.jpg');"></div>
+            <h2>Backend Developer</h2>
+            <p>Study Node.js, Python, and MySQL in preparation for a Backend Developer position.</p>
+        </div>
+
+        <!-- รายการที่ 3 -->
+        <div class="certify-card">
+            <div class="banner" style="background-image: url('img/design03.jpg');"></div>
+            <h2>UI/UX Design</h2>
+            <p>Study Figma, Adobe XD, and Sketch to design user experiences.</p>
+        </div>
+
+        <!-- รายการที่ 4 -->
+        <div class="certify-card">
+            <div class="banner" style="background-image: url('img/Javascript04.jpg');"></div>
+            <h2>JavaScript Advanced Course</h2>
+            <p>Enhance JavaScript skills for a Frontend Developer role.</p>
+        </div>
+
+        <!-- รายการที่ 5 -->
+        <div class="certify-card">
+            <div class="banner" style="background-image: url('img/database05.jpg');"></div>
+            <h2>Database & API Workshop</h2>
+            <p>Study database design and API development for a Backend Developer role.</p>
+        </div>
+
+        <!-- รายการที่ 6 -->
+        <div class="certify-card">
+            <div class="banner" style="background-image: url('img/research06.jpg');"></div>
+            <h2>UX Research & Testing</h2>
+            <p>Learn user analysis and conduct usability testing for a UI/UX Designer role.</p>
+        </div>
+    </div>
+
+    <h1 id="aboutus">About Us</h1>
+    <div class="aboutus">
+        <p>Company | Mantoon Co.,Ltd.</p>
+        <p>Adress | 9, 1 Phahonyothin Rd, Tambon Khlong Nung, Amphoe Khlong Luang, Chang Wat Pathum Thani 12120</p>
+        <p>Contact | Siwawit jitkusolpasuk, Sasakorn Traibanyatkul</p>
+        <p>Email | siwawit.jitk@bumail.net, sasakorn.trai@bumail.net</p>
+        <p>Tel | 065-971-4850, 099-802-9200</p>
+    </div>
+
+    <div class="contact-form" id="contact">
+    <h2>Contact Us</h2>
+    <form name="contact" onsubmit="return contactValidation();">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+        <label for="conemail">Email</label>
+        <input type="email" id="conemail" name="email" placeholder="Your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+        <button type="submit" value="Submit">Send Message</button>
+    </form>
+    </div>
+    
+    <!-- ปุ่มขึ้นบน -->
+    <button onclick="topFunction()" id="btnTop" title="Go to top">↑</button>
+
+    <script src="form.js"></script>
+    <footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Mantoon Co., Ltd. All Rights Reserved.</p>
+    <p>Powered by Mantoon Co., Ltd.</p>
+  </div>
+</footer>
+</body>
+</html>
